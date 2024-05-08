@@ -21,23 +21,23 @@ class Coding extends StatelessWidget {
             style: Theme.of(context).textTheme.subtitle2,
           ),
         ),
-        AnimatedLinearProgressIndicator(
+        const AnimatedLinearProgressIndicator(
           percentage: 0.8,
           label: "Dart",
         ),
-        AnimatedLinearProgressIndicator(
+        const AnimatedLinearProgressIndicator(
           percentage: 0.95,
           label: "Python",
         ),
-        AnimatedLinearProgressIndicator(
+        const AnimatedLinearProgressIndicator(
           percentage: 0.65,
           label: "C Lang",
         ),
-        AnimatedLinearProgressIndicator(
+        const AnimatedLinearProgressIndicator(
           percentage: 0.75,
           label: "C++",
         ),
-        AnimatedLinearProgressIndicator(
+        const AnimatedLinearProgressIndicator(
           percentage: 0.7,
           label: "Database",
         ),

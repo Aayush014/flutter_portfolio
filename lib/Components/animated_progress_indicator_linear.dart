@@ -22,7 +22,7 @@ class AnimatedLinearProgressIndicator extends StatelessWidget {
         builder: (context, double value, child) => Column(
           children: [
             Padding(
-              padding: const EdgeInsets.only(bottom: defaultPadding/2),
+              padding: const EdgeInsets.only(bottom: defaultPadding / 2),
               child: Row(
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 children: [
@@ -34,10 +34,11 @@ class AnimatedLinearProgressIndicator extends StatelessWidget {
                         .copyWith(color: Colors.white),
                   ),
                   Text(
-                    (value*100).toInt().toString()+"%",
+                    (value * 100).toInt().toString() + "%",
                     style: Theme.of(context)
                         .textTheme
-                        .subtitle1!.copyWith(color: bodyTextColor),
+                        .subtitle1!
+                        .copyWith(color: bodyTextColor),
                   ),
                 ],
               ),

@@ -15,8 +15,7 @@ class Skills extends StatelessWidget {
       children: [
         const Divider(),
         Padding(
-          padding:
-          const EdgeInsets.symmetric(vertical: defaultPadding),
+          padding: const EdgeInsets.symmetric(vertical: defaultPadding),
           child: Text(
             "Skills",
             style: Theme.of(context).textTheme.subtitle2,
@@ -26,28 +25,27 @@ class Skills extends StatelessWidget {
           children: [
             Expanded(
                 child: AnimatedCircularProgressIndicator(
-                  percentage: 0.95,
-                  label: "Flutter",
-                )),
+              percentage: 0.95,
+              label: "Flutter",
+            )),
             SizedBox(
               width: defaultPadding,
             ),
             Expanded(
                 child: AnimatedCircularProgressIndicator(
-                  percentage: 0.8,
-                  label: "Dart",
-                )),
+              percentage: 0.8,
+              label: "Dart",
+            )),
             SizedBox(
               width: defaultPadding,
             ),
             Expanded(
                 child: AnimatedCircularProgressIndicator(
-                  percentage: 0.75,
-                  label: "Firebase",
-                )),
+              percentage: 0.75,
+              label: "Firebase",
+            )),
           ],
         ),
-
       ],
     );
   }

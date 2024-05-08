@@ -1,9 +1,10 @@
+import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-
+import 'package:flutter/widgets.dart';
 import '../../../constants.dart';
 
-class myInfo extends StatelessWidget {
-  const myInfo({
+class MyInfo extends StatelessWidget {
+  const MyInfo({
     super.key,
   });
 
@@ -17,28 +18,31 @@ class myInfo extends StatelessWidget {
           decoration: BoxDecoration(borderRadius: BorderRadius.circular(25),color: secondaryColor,),
           child: Column(
             children: [
-              Spacer(
+              const Spacer(
                 flex: 2,
               ),
-              CircleAvatar(
+              const CircleAvatar(
                 radius: 50,
                 backgroundImage: AssetImage('Assets/images/images.png'),
               ),
-              Spacer(),
+              const Spacer(),
               Text(
                 "Aayush Patel",
                 style: Theme.of(context).textTheme.titleSmall,
               ),
-              Text(
-                "Flutter Developer & Founder of \nWeekend Developers",
-                textAlign: TextAlign.center,
-                style: Theme.of(context).textTheme.bodyMedium!.copyWith(
-                  fontWeight: FontWeight.w200,
-                  height: 1.5,
+              FittedBox(
+                child: Text(
+                  "Flutter Developer & Founder of \nWeekend Developers",
+                  textAlign: TextAlign.center,
+                  style: Theme.of(context).textTheme.bodyMedium!.copyWith(
+                    fontSize: 12,
+                    fontWeight: FontWeight.w600,
+                    height: 1.5,
+                  ),
                 ),
               ),
-              Spacer(
-                flex: 2,
+              const Spacer(
+                flex: 1,
               ),
             ],
           ),
