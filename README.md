@@ -1,6 +1,6 @@
 # Responsive and Animated Portfolio Website & App
 
-## [Live Preview](https://aayush141105.github.io/)
+## [Live Preview](https://aayush014.netlify.app/)
 
 **Packages we are using:**
 
